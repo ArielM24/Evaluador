@@ -1,0 +1,10 @@
+Para ejecutar el programa:
+	java Evaluador directorio archivoEntrada archivoSalida
+
+	Ejemplo:
+	java Evaluador p1 p1.txt salida.txt
+
+"archivoEntrada" debe contener:
+	Nombre_Estudiante(sin espacios) programa.exe arg1 arg2 ... argN
+"directorio" debe contener los .exe especificados en "archivoEntrada"
+"archivoSalida" siempre se crea en blanco al ejecutar el programa
