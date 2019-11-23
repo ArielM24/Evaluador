@@ -74,6 +74,7 @@ public class Evaluador {
 				tmp.delete();
 			}else{
 				bw.write("Error");
+				bw.newLine();
 			}
 			bw.close();
 		}catch(Exception ex){
@@ -97,13 +98,8 @@ public class Evaluador {
 	}
 
 	public static void main(String[] args) {
-		Evaluador e = new Evaluador(new File("p1"),new File("p1.txt"),new File("sal.txt"));
-		for(String[] cmd: e.obtenExes()){
-			for(int i = 0; i < cmd.length; i++){
-				System.out.print(cmd[i]+", ");
-			}
-			System.out.println();
-		}
+		Evaluador e = new Evaluador(new File(args[0]),
+			new File(args[1]),new File(args[2]));
 		e.ejecutaExes();
 	}
 }
